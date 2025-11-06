@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services - DevScript Nepal</title>
+    <meta name="description" content="Custom web applications built with modern frameworks like React, Next.js, and Node.js for optimal performance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <span>DS</span>
+                    </div>
+                    <span class="logo-text">DevScript Nepal</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html#hero">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#portfolio">Portfolio</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="index.html#contact" class="btn-cta">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="index.html#contact" class="btn-cta">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
+        
+        <div class="container">
+            <div class="fade-in">
+                <div class="icon-box" style="display: inline-block; margin-bottom: 1.5rem;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--royal-blue);">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <h1 class="page-title">
+                    <span class="gradient-text">Web Development</span>
+                </h1>
+                <p class="page-description">
+                    Custom web applications built with modern frameworks like React, Next.js, and Node.js 
+                    for optimal performance and exceptional user experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="fade-left">
+                    <div class="card">
+                        <h2 class="card-title highlight">What We Offer</h2>
+                        <p>
+                            At DevScript Nepal, we specialize in crafting cutting-edge web applications that drive 
+                            business growth and deliver exceptional user experiences. Our team of expert developers 
+                            leverages the latest technologies and best practices to build scalable, secure, and 
+                            high-performance solutions.
+                        </p>
+                        <p>
+                            From single-page applications to complex enterprise systems, we have the expertise to 
+                            bring your vision to life. We focus on clean code, modern architecture, and seamless 
+                            integration to ensure your web application stands out in today's competitive landscape.
+                        </p>
+                        <p>
+                            Whether you need an e-commerce platform, a SaaS application, or a corporate website, 
+                            we deliver solutions that are not just functional, but extraordinary.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fade-right">
+                    <div class="card">
+                        <h3 class="card-title" style="color: var(--royal-blue);">Key Features</h3>
+                        <ul class="service-features">
+                            <li>Responsive & Mobile-First Design</li>
+                            <li>Progressive Web Apps (PWA)</li>
+                            <li>SEO Optimization</li>
+                            <li>Real-Time Data Integration</li>
+                            <li>API Development & Integration</li>
+                            <li>Content Management Systems</li>
+                            <li>E-Commerce Solutions</li>
+                            <li>Custom Dashboard & Analytics</li>
+                            <li>Third-Party Integrations</li>
+                            <li>Cloud Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="section-padding" style="background: linear-gradient(to bottom, transparent, rgba(10, 14, 26, 0.5), transparent);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technologies We <span class="highlight">Master</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    We work with the most advanced and reliable technologies in the industry
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card fade-up">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                    </svg>
+                    <h3>Frontend</h3>
+                    <p>React, Next.js, Vue.js, Angular, TypeScript, Tailwind CSS</p>
+                </div>
+
+                <div class="info-card fade-up">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, Python, Django, GraphQL, REST APIs</p>
+                </div>
+
+                <div class="info-card fade-up">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                    <h3>Database</h3>
+                    <p>MongoDB, PostgreSQL, MySQL, Firebase, Redis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Perfect For <span class="highlight">Your Needs</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <h4>E-Commerce Platforms</h4>
+                    <p>Build powerful online stores with secure payment integration and inventory management.</p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 20V10"></path>
+                        <path d="M12 20V4"></path>
+                        <path d="M6 20v-6"></path>
+                    </svg>
+                    <h4>SaaS Applications</h4>
+                    <p>Scalable cloud-based software solutions with subscription management and analytics.</p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                    <h4>Corporate Websites</h4>
+                    <p>Professional websites that establish your brand and showcase your business excellence.</p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path>
+                        <path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path>
+                        <path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path>
+                        <path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"></path>
+                        <path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"></path>
+                        <path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path>
+                        <path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"></path>
+                        <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"></path>
+                    </svg>
+                    <h4>Custom Portals</h4>
+                    <p>Tailored web portals for internal business operations and client management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-cta fade-in">
+                <h2>Ready to Build Your <span class="highlight">Web Application?</span></h2>
+                <p>Let's discuss your project requirements and create something amazing together.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="index.html#contact" class="btn-primary">
+                        Start Your Project
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="index.html#services" class="btn-secondary">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>DS</span>
+                        </div>
+                        <span class="logo-text">DevScript Nepal</span>
+                    </div>
+                    <p>
+                        Empowering businesses with cutting-edge technology solutions. 
+                        Based in Nepal, serving globally.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#">L</a>
+                        <a href="#">T</a>
+                        <a href="#">G</a>
+                        <a href="#">F</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service-web-development.html">Web Development</a></li>
+                        <li><a href="service-mobile-apps.html">Mobile Apps</a></li>
+                        <li><a href="service-uiux-design.html">UI/UX Design</a></li>
+                        <li><a href="service-cloud-services.html">Cloud Services</a></li>
+                        <li><a href="service-cybersecurity.html">Cybersecurity</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> DevScript Nepal Pvt. Ltd. Made with ❤️ in Nepal</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
