@@ -4,7 +4,12 @@ import path from "node:path";
 const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const nextConfig: NextConfig = {
+  // Enable static HTML export
+  output: "export",
+
+  // Images: disable optimization for static export
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -16,13 +21,21 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  // For Next.js to trace files correctly outside this folder
   outputFileTracingRoot: path.resolve(__dirname, '../../'),
+
+  // TypeScript settings
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  // ESLint settings
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // Turbopack loader configuration
   turbopack: {
     rules: {
       "*.{jsx,tsx}": {
@@ -33,4 +46,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-// Orchids restart: 1762387364160
